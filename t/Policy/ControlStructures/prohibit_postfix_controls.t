@@ -227,3 +227,11 @@ do_something() unless $condition; ## no lint
 do_something() for @list;
 do_something() foreach @list;
 do_something() when @list;
+
+===
+--- dscr: with methods();
+--- failures: 0
+--- params:
+--- input
+Exception::Class->throw('an expression'); if ($error) { }
+
